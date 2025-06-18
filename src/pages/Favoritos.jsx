@@ -6,7 +6,7 @@ function Favoritos() {
 
   // Carrega os heróis favoritados do localStorage ao abrir a página
   useEffect(() => {
-    const salvos = localStorage.getItem("heroisFavoritos");
+    const salvos = localStorage.getItem("favoritosMarvel");
     if (salvos) {
       setFavoritos(JSON.parse(salvos));
     }
@@ -16,7 +16,7 @@ function Favoritos() {
   function desfavoritar(id) {
     const novosFavoritos = favoritos.filter(heroi => heroi.id !== id);
     setFavoritos(novosFavoritos);
-    localStorage.setItem("heroisFavoritos", JSON.stringify(novosFavoritos));
+    localStorage.setItem("favoritosMarvel", JSON.stringify(novosFavoritos));
   }
 
   // Se não há favoritos, mostra mensagem
@@ -36,8 +36,12 @@ function Favoritos() {
             className="imagemFavorito"
           />
           <span>{heroi.name}</span>
-          <button className="botaoFavorito" onClick={() => desfavoritar(heroi.id)}>
-            Desfavoritar
+          <button
+            className="botaoFavorito"
+            onClick={() => desfavoritar(heroi.id)}
+            title="Desfavoritar"
+          >
+            Desfavoritar 💔
           </button>
         </div>
       ))}
