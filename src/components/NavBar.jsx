@@ -3,7 +3,7 @@ import "./NavBar.css";
 
 function Nav() {
   return (
-    <nav className="nav">
+    <header className="nav">
       <div className="nav-title">
         <h1>Marvel Heroes</h1>
       </div>
@@ -11,7 +11,7 @@ function Nav() {
         <Link to="/">Home</Link>
         <Link to="/favoritos">Favoritos ❤</Link>
       </div>
-    </nav>
+    </header>
   );
 }
 
