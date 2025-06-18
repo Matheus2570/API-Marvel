@@ -75,10 +75,12 @@
   @media (max-width: 480px) {
     .footer-linkszin a{
       font-size: 1em;
+      align-items: center;
     }
   
     .footerzin {
       padding: 15px;
+      align-items: center;
     }
   
   }

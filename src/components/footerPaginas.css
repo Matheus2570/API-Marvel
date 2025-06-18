@@ -90,10 +90,12 @@
     .footer-links a,
     .contact-item {
       font-size: 1em;
+      align-items: center;
     }
   
     .footer {
       padding: 15px;
+      align-items: center;
     }
   
     .contact-item {
