@@ -20,22 +20,19 @@ function ListaPersonagens() {
       const ts = Date.now().toString();
       const hash = md5(ts + CHAVE_PRIVADA + CHAVE_PUBLICA);
 
-      const url = `https://gateway.marvel.com/v1/public/characters?limit=20&ts=${ts}&apikey=${CHAVE_PUBLICA}&hash=${hash}`;
+      // URL base da API.
+      let url = `https://gateway.marvel.com/v1/public/characters?limit=20&ts=${ts}&apikey=${CHAVE_PUBLICA}&hash=${hash}`;
+
+      // Se o usuário digitou algo, adiciona filtro de busca na URL.
+      if (busca.trim() !== "") {
+        url += `&nameStartsWith=${encodeURIComponent(busca.trim())}`;
+      }
 
       try {
         const resposta = await fetch(url);
         const dados = await resposta.json();
 
-        let resultados = dados.data.results;
-
-        // Se o campo nao estiver vazio, filtra os resultados
-        if (busca.trim() !== "") {
-          const termoBusca = busca.toLowerCase();
-          resultados = resultados.filter((heroi) =>
-            heroi.name.toLowerCase().includes(termoBusca) ||
-            heroi.description.toLowerCase().includes(termoBusca)
-          );
-        }
+        const resultados = dados.data.results;
 
         if (resultados.length === 0) {
           setErro("Nenhum personagem encontrado.");
@@ -58,7 +55,7 @@ function ListaPersonagens() {
     <div className="container">
       <input
         type="text"
-        placeholder="Buscar por nome ou descrição..."
+        placeholder="Buscar por nome..."
         value={busca}
         onChange={(e) => setBusca(e.target.value)}
         className="inputBusca"
