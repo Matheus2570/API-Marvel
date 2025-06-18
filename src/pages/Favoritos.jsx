@@ -1,5 +1,5 @@
 import  { useState, useEffect } from "react";
-import "./botaoCurtir.css"; 
+import "./Favoritos.css"; 
 
 // Componente que exibe o número de curtidas e permite ao usuário curtir
 const Curtidas = ({ chaveLocalStorage }) => {   //Props
@@ -17,7 +17,7 @@ const Curtidas = ({ chaveLocalStorage }) => {   //Props
   }, [chaveLocalStorage]);
 
   // Função que é executada quando o usuário clica no botão de curtir
-  const handleCurtir = () => {
+  const Curtir = () => {
     // Incrementa o número de curtidas
     const novaCurtida = curtidas + 1;
     // Atualiza o estado com o novo número de curtidas
@@ -29,7 +29,7 @@ const Curtidas = ({ chaveLocalStorage }) => {   //Props
   // Retorna o JSX que exibe o botão de curtir e o número de curtidas
   return (
     <div className='botaoContainer'>
-      <button className='botaoCurtir' onClick={handleCurtir}>👍 Curtir</button>
+      <button className='botaoCurtir' onClick={Curtir}>💗 Favoritar</button>
       <span style={{ marginLeft: "10px" }}>{curtidas} curtidas</span>
     </div>
   );
