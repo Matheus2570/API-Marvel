@@ -1,0 +1,84 @@
+.footerzin {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-containerzin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding-top: 3%;
+  padding-bottom: 2%;
+   padding-left: 15%;
+  padding-right: 20%;
+  /* border: 2px solid; */ /* Descomente se quiser ver a borda para teste */
+}
+
+
+
+
+
+.footer-linkszin ul {
+  list-style: none;
+   color: #787878;
+}
+
+.footer-linkszin li {
+  margin-bottom: 10px;
+}
+
+.footer-linkszin a {
+  text-decoration: none;
+   font-size: 80%;
+   margin-right: -35%;
+    color: #787878;
+}
+
+.footer-linkszin a:hover {
+  text-decoration: underline;
+ 
+}
+
+
+
+
+/* Responsivo para tablets e celulares */
+@media (max-width: 768px) {
+    .footerzin {
+      flex-direction: row;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .footer-containerzin {
+      flex-direction: row;
+      align-items: center;
+     
+    }
+  
+    .footer-linkszin ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .footer-linkszin li {
+      margin-bottom: 8px;
+    }
+  
+  }
+  
+  /* Ajuste extra para celulares menores */
+  @media (max-width: 480px) {
+    .footer-linkszin a{
+      font-size: 1em;
+    }
+  
+    .footerzin {
+      padding: 15px;
+    }
+  
+  }
