@@ -1,9 +1,10 @@
 import React from 'react';
+import ListaPersonagens from '../components/ListaPersonagens';
 
 function Home() {
   return (
-    <div style={{ textAlign: 'center'}}>
-      <h1>Heróis</h1>
+    <div style={{display: 'flex'}}>
+      <ListaPersonagens />
     </div>
   );
 }
