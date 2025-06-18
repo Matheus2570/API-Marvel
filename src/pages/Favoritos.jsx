@@ -4,21 +4,27 @@ import "./Favoritos.css";
 function Favoritos() {
   const [favoritos, setFavoritos] = useState([]);
 
+  // Carrega os heróis favoritados do localStorage ao abrir a página
   useEffect(() => {
-    const favs = JSON.parse(localStorage.getItem("heroisFavoritos") || "[]");
-    setFavoritos(favs);
+    const salvos = localStorage.getItem("heroisFavoritos");
+    if (salvos) {
+      setFavoritos(JSON.parse(salvos));
+    }
   }, []);
 
+  // Remove um herói dos favoritos
   function desfavoritar(id) {
-    const novos = favoritos.filter(h => h.id !== id);
-    localStorage.setItem("heroisFavoritos", JSON.stringify(novos));
-    setFavoritos(novos);
+    const novosFavoritos = favoritos.filter(heroi => heroi.id !== id);
+    setFavoritos(novosFavoritos);
+    localStorage.setItem("heroisFavoritos", JSON.stringify(novosFavoritos));
   }
 
-  if (favoritos.length == 0) {
+  // Se não há favoritos, mostra mensagem
+  if (favoritos.length === 0) {
     return <p className="statusMensagem">Nenhum herói favoritado.</p>;
   }
 
+  // Lista os heróis favoritados
   return (
     <div className="favoritosLista">
       <h2>Heróis Favoritados</h2>
@@ -27,7 +33,7 @@ function Favoritos() {
           <img
             src={`${heroi.thumbnail.path}/portrait_small.${heroi.thumbnail.extension}`}
             alt={heroi.name}
-            style={{ borderRadius: "8px" }}
+            className="imagemFavorito"
           />
           <span>{heroi.name}</span>
           <button className="botaoFavorito" onClick={() => desfavoritar(heroi.id)}>
