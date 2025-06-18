@@ -1,7 +1,9 @@
-// src/components/ListaPersonagens.jsx
+
 import React, { useEffect, useState } from "react";
 import md5 from "blueimp-md5";
-import "./ListaPersonagens.css";  // Importa o CSS externo
+import "./ListaPersonagens.css";  
+import { Link } from "react-router-dom";
+
 
 const CHAVE_PUBLICA = "1b56983c55c139fd96b4d5fe0c7ff754";
 const CHAVE_PRIVADA = "07eee49f762237bd4f7da55c08d100e867c63b1f";
@@ -64,13 +66,17 @@ function ListaPersonagens() {
         <div className="listaWrapper">
           <div className="listaPersonagens">
             {personagens.map((heroi) => (
+             <Link  to={`/detalhes/${heroi.id}`} className="linkPersonagem"> 
               <div key={heroi.id} className="cardPersonagem">
+               
                 <img
                   src={`${heroi.thumbnail.path}/standard_xlarge.${heroi.thumbnail.extension}`}
                   alt={heroi.name}
                 />
                 <h3>{heroi.name}</h3>
+             
               </div>
+                 </Link>    
             ))}
           </div>
         </div>
