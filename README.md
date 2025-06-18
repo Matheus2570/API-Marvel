@@ -34,10 +34,6 @@ Cada personagem vem com imagem, descrição e pode ser marcado como favorito, se
 
 O visual foi feito para ser dinâmico e funcional, com uma identidade baseada no universo Marvel. O site se adapta bem a diferentes dispositivos, como celulares, tablets e computadores.
 
-## 🌐 Deploy
-
-O site pode ser publicado em plataformas como **Vercel** ou **Netlify**, para fácil compartilhamento e acesso.  
-> 📎 *Adicione aqui o link do seu deploy se já tiver feito.*
 
 ## 🎯 Objetivo do projeto
 
