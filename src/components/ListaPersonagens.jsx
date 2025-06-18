@@ -28,7 +28,7 @@ function ListaPersonagens() {
 
         let resultados = dados.data.results;
 
-        // 🔍 Filtro por nome ou descrição (insensível a maiúsculas)
+        // Se o campo nao estiver vazio, filtra os resultados
         if (busca.trim() !== "") {
           const termoBusca = busca.toLowerCase();
           resultados = resultados.filter((heroi) =>
