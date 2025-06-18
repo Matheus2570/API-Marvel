@@ -1,0 +1,39 @@
+.botaoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.botaoFavorito {
+  background-color: #feda4a;
+  color: #000000;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.botaoFavorito:hover {
+background-color: #ffcc00;
+}
+
+.contadorCurtidas {
+  font-size: 23px;
+  color: #000000;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .botaoFavorito {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .botaoFavorito {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+}
