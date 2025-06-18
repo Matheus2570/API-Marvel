@@ -60,7 +60,7 @@ function DetalhesHerois() {
       <div className="detalhesTitulo">
         <h1>{heroi.name}</h1>
         <img
-          src={`${heroi.thumbnail.path}${heroi.thumbnail.extension}`}
+          src={`${heroi.thumbnail.path}/portrait_uncanny.${heroi.thumbnail.extension}`}
           alt={heroi.name}
         />
       </div>
