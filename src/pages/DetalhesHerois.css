@@ -45,3 +45,30 @@
     margin: 10px 0;
     text-align: justify;
 }
+
+.iconeCoracao {
+ 
+  font-size: 32px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+  margin-top: 15px;
+
+}
+
+.favoritarContainer{
+  text-align: center;
+}
+
+.iconeCoracao:hover {
+  transform: scale(1.2);
+}
+
+.favoritado {
+  color: red;
+}
+
+.nao-favoritado {
+  color: white;
+}
