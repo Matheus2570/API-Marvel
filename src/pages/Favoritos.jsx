@@ -2,37 +2,37 @@ import  { useState, useEffect } from "react";
 import "./Favoritos.css"; 
 
 // Componente que exibe o número de curtidas e permite ao usuário curtir
-const Curtidas = ({ chaveLocalStorage }) => {   //Props
+const Favoritos = ({ chaveLocalStorage }) => {   
   // Estado que armazena o número de curtidas
-  const [curtidas, setCurtidas] = useState(0);
+  const [favoritos, setFavoritos] = useState(0);
 
   // Efeito que é executado quando o componente é montado ou atualizado
   useEffect(() => {
     // Recupera o número de curtidas salvo no localStorage
-    const curtidaSalva = localStorage.getItem(chaveLocalStorage);
-    if (curtidaSalva) {
+    const favoritoSalvo = localStorage.getItem(chaveLocalStorage);
+    if (favoritoSalvo) {
       // Atualiza o estado com o número de curtidas salvo
-      setCurtidas(parseInt(curtidaSalva));
+      setFavoritos(parseInt(favoritoSalvo));
     }
   }, [chaveLocalStorage]);
 
   // Função que é executada quando o usuário clica no botão de curtir
-  const Curtir = () => {
+  const Favoritar = () => {
     // Incrementa o número de curtidas
-    const novaCurtida = curtidas + 1;
+    const novoFavorito = favoritos + 1;
     // Atualiza o estado com o novo número de curtidas
-    setCurtidas(novaCurtida);
+    setFavoritos(novoFavorito);
     // Salva o novo número de curtidas no localStorage
-    localStorage.setItem(chaveLocalStorage, novaCurtida);
+    localStorage.setItem(chaveLocalStorage, novoFavorito);
   };
 
   // Retorna o JSX que exibe o botão de curtir e o número de curtidas
   return (
     <div className='botaoContainer'>
-      <button className='botaoCurtir' onClick={Curtir}>💗 Favoritar</button>
-      <span style={{ marginLeft: "10px" }}>{curtidas} curtidas</span>
+      <button className='botaoCurtir' onClick={Favoritar}>💗 Favoritar</button>
+      <span style={{ marginLeft: "10px" }}>{favoritos} curtidas</span>
     </div>
   );
 };
 
-export default Curtidas;
+export default Favoritos;
