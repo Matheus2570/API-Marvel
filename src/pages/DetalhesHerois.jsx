@@ -40,6 +40,7 @@ function DetalhesHerois() {
     const favoritos = JSON.parse(localStorage.getItem("favoritosMarvel")) || [];
 
     // Evita duplicatas
+    // Se nenhum dos heróis já favoritos tem o mesmo ID do herói atual, então pode adicionar.
     if (!favoritos.some((f) => f.id === heroi.id)) {
       favoritos.push({
         id: heroi.id,
@@ -59,7 +60,7 @@ function DetalhesHerois() {
       <div className="detalhesTitulo">
         <h1>{heroi.name}</h1>
         <img
-          src={`${heroi.thumbnail.path}/portrait_uncanny.${heroi.thumbnail.extension}`}
+          src={`${heroi.thumbnail.path}${heroi.thumbnail.extension}`}
           alt={heroi.name}
         />
       </div>
