@@ -1,6 +1,6 @@
 import './footerPaginas.css';
 
-function FooterPaginas({ link1, link2, link3, link4, link5, link6, link7, link8, link9 }) {
+function FooterPaginas() {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -10,28 +10,13 @@ function FooterPaginas({ link1, link2, link3, link4, link5, link6, link7, link8,
             <li>
             </li>
             <li>
-              <a href={link1} target="_blank" rel="noreferrer">About Marvel</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">About Marvel</a>
             </li>
             <li>
-              <a href={link2} target="_blank" rel="noreferrer">Help/FAQs</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Help/FAQs</a>
             </li>
             <li>
-              <a href={link3} target="_blank" rel="noreferrer">Internships</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer-links">
-          <ul>
-            <li>
-            </li>
-            <li>
-              <a href={link4} target="_blank" rel="noreferrer">Advertising</a>
-            </li>
-            <li>
-              <a href={link5} target="_blank" rel="noreferrer">Disney+</a>
-            </li>
-            <li>
-              <a href={link6} target="_blank" rel="noreferrer">Careers</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Internships</a>
             </li>
           </ul>
         </div>
@@ -40,13 +25,28 @@ function FooterPaginas({ link1, link2, link3, link4, link5, link6, link7, link8,
             <li>
             </li>
             <li>
-              <a href={link7} target="_blank" rel="noreferrer">Marvelhq.com</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Advertising</a>
             </li>
             <li>
-              <a href={link8} target="_blank" rel="noreferrer">Redeem Digital</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Disney+</a>
             </li>
             <li>
-              <a href={link9} target="_blank" rel="noreferrer">Comics</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-links">
+          <ul>
+            <li>
+            </li>
+            <li>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Marvelhq.com</a>
+            </li>
+            <li>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Redeem Digital</a>
+            </li>
+            <li>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Comics</a>
             </li>
           </ul>
         </div>

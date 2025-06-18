@@ -1,6 +1,6 @@
 import './miniFooterPaginas.css';
 
-function FooterPaginas({ link1, link2, link3, link4, link5 }) {
+function FooterPaginas() {
   return (
     <footer className="footerzin">
       <div className="footer-containerzin">
@@ -8,7 +8,7 @@ function FooterPaginas({ link1, link2, link3, link4, link5 }) {
         <div className="footer-linkszin">
           <ul>
             <li>
-               <a href={link1} target="_blank" rel="noreferrer">Condições de Uso</a>
+               <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Condições de Uso</a>
             </li>
           </ul>
         </div>
@@ -17,7 +17,7 @@ function FooterPaginas({ link1, link2, link3, link4, link5 }) {
         <div className="footer-linkszin">
           <ul>
             <li>
-              <a href={link2} target="_blank" rel="noreferrer">Politica de Privacidade</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Politica de Privacidade</a>
             </li>
           </ul>
         </div>
@@ -26,7 +26,7 @@ function FooterPaginas({ link1, link2, link3, link4, link5 }) {
         <div className="footer-linkszin">
           <ul>
             <li>
-              <a href={link3} target="_blank" rel="noreferrer">Acordo de licença</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Acordo de licença</a>
             </li>
           </ul>
           </div>
@@ -35,7 +35,7 @@ function FooterPaginas({ link1, link2, link3, link4, link5 }) {
           <div className="footer-linkszin">
           <ul>
               <li>
-              <a href={link4} target="_blank" rel="noreferrer">Política de consumo no Brasil</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Política de consumo no Brasil</a>
             </li>
           </ul>
           </div>
@@ -44,7 +44,7 @@ function FooterPaginas({ link1, link2, link3, link4, link5 }) {
           <div className="footer-linkszin">
           <ul>
               <li>
-              <a href={link5} target="_blank" rel="noreferrer">Anúncios</a>
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDE04TmCKpAST3LzrCWQgXTNMK1bqAGv-lg&s" target="_blank" rel="noreferrer">Anúncios</a>
             </li>
           </ul>
           </div>

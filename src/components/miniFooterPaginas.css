@@ -32,9 +32,9 @@
 
 .footer-linkszin a {
   text-decoration: none;
-  transition: color 0.3s;
    font-size: 80%;
    margin-right: -35%;
+    color: #787878;
 }
 
 .footer-linkszin a:hover {
