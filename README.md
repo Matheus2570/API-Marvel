@@ -1,12 +1,46 @@
-# React + Vite
+# 🦸‍♂️ Site de Personagens da Marvel - Projeto em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este site foi desenvolvido como projeto de estudo para aprender a usar **React** com **API externa**, utilizando os dados da Marvel para exibir personagens, com imagens, descrições e sistema de favoritos.
 
-Currently, two official plugins are available:
+## 📝 O que tem no site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O site apresenta uma lista de personagens do universo Marvel, com informações vindas diretamente da **Marvel Developer API**. Além disso, você pode:
 
-## Expanding the ESLint configuration
+- 🔍 Buscar personagens pelo nome  
+- 🖼️ Ver os detalhes de cada personagem  
+- ⭐ Favoritar seus personagens preferidos  
+- 🏠 Acessar a página inicial com todos os heróis  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cada personagem vem com imagem, descrição e pode ser marcado como favorito, sendo salvo no seu navegador.
+
+## 🚀 Funcionalidades principais
+
+- 🔄 Navegação entre páginas usando **React Router**  
+- ⚙️ Busca de dados da API da Marvel com `useEffect`  
+- 🎛️ Controle de favoritos com `useState`  
+- 📌 Identificação do personagem pela URL com `useParams`  
+- 💾 Armazenamento dos favoritos no **localStorage**, mantendo seus heróis salvos mesmo ao fechar o site  
+- ⭐ Ícone de favorito muda quando o herói já está marcado  
+
+## 🛠️ Tecnologias usadas
+
+- ⚛️ **React.js** para a construção da interface  
+- 🌐 **Marvel API** para obter dados dos personagens  
+- 🧭 **React Router** para navegar entre as páginas  
+- 🗄️ **localStorage** para guardar heróis favoritos  
+- 🎨 **CSS3** para estilização, com foco visual heróico e moderno  
+
+## 🎨 Estilização e responsividade
+
+O visual foi feito para ser dinâmico e funcional, com uma identidade baseada no universo Marvel. O site se adapta bem a diferentes dispositivos, como celulares, tablets e computadores.
+
+## 🌐 Deploy
+
+O site pode ser publicado em plataformas como **Vercel** ou **Netlify**, para fácil compartilhamento e acesso.  
+> 📎 *Adicione aqui o link do seu deploy se já tiver feito.*
+
+## 🎯 Objetivo do projeto
+
+Esse projeto tem como objetivo aprender na prática a usar **React com API externa**, controlar estado com React Hooks, usar rotas dinâmicas, armazenar dados localmente e criar uma experiência interativa e divertida com os personagens da Marvel.
+
+
