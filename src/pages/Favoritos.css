@@ -73,9 +73,7 @@ body {
   box-shadow: 0 2px 8px #f0141e44;
 }
 
-.botaoFavorito:hover {
-  color: #f0141e;
-}
+
 
 .statusMensagem {
   text-align: center;
