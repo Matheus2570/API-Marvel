@@ -9,7 +9,6 @@ function Nav() {
       </div>
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/detalhes">Detalhes</Link>
         <Link to="/favoritos">Favoritos ❤</Link>
       </div>
     </nav>
